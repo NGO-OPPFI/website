@@ -1,0 +1,363 @@
+/* Property of Anthony Krivonos and Mary Karroqe of OPPFI */
+
+body
+{
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+}
+
+@font-face
+{
+    font-family: titleFont;
+    src: url(fonts/scala.ttf);
+}
+
+@font-face
+{
+    font-family: subFont;
+    src: url(fonts/quarca.otf);
+}
+
+.navbar
+{
+      font-family:titleFont;
+      -webkit-user-select: none;
+      position: absolute;
+      font-size: 15pt;
+      font-size: 2.5vw;
+      z-index: 3;
+      width:100%;
+      overflow: hidden;
+      margin: 0 auto;
+      left: 3%;
+      right: 0;
+      padding-top:5px;
+      padding-bottom:5px;
+      top:0;
+      color:white;
+}
+
+span.navbg
+{
+      font-family:titleFont;
+      -webkit-user-select: none;
+      position: absolute;
+      font-size: 2.5vw;
+      z-index: 2;
+      width:100%;
+      overflow: hidden;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      padding-top:5px;
+      padding-bottom:5px;
+      top:0;
+      background-color: #ADD6FF;
+      color: #ADD6FF;
+}
+
+div.navbg
+{
+      display:inline;
+      background-color: #3399FF;
+      color: white;
+      padding-left:2%;
+      padding-right:2%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      cursor: pointer;
+      cursor: hand;
+}
+
+.navbar > span
+{
+      margin-left: 4%;
+      margin-right: 4%;
+      cursor: hand;
+      cursor: pointer;
+      -webkit-user-select: none;
+      min-width: 1000px;
+}
+
+.navbar > span:hover
+{
+      color:white;
+}
+
+.homeimg
+{
+      display: inline-block;
+      position: relative;
+      margin-bottom:3px;
+      margin-bottom:-22px;
+}
+
+.homeimg > img
+{
+      display: block;
+      position: relative;
+      width: 110%;
+      margin-left:-10px;
+      z-index: -1;
+}
+
+.homeimg > button
+{
+      position: absolute;
+      z-index:1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: .5em 1em;
+      border: solid 1px white;
+      border-radius: 1px;
+      width:200px;
+      height:40px;
+      font-family: titleFont;
+      font-size: 16pt;
+      background: none;
+}
+
+.homeimg > button:hover
+{
+      cursor: hand;
+      cursor: pointer;
+}
+
+.information
+{
+      width: 100%;
+}
+
+.bottombar
+{
+      width: 100%;
+      background:#3399FF;
+      text-align: center;
+      font-family: subFont;
+      -webkit-user-select: none;
+      cursor: default;
+}
+
+.bottomleft
+{
+
+}
+
+.bottomright
+{
+
+}
+
+div.lcolumnl
+{
+      float:left;
+      width:65%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+}
+
+div.lcolumnm
+{
+      float:right;
+      width:50%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+}
+
+div.lcolumns
+{
+      float:right;
+      width:35%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+}
+
+div.rcolumnl
+{
+      float:right;
+      width:65%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+      height: 100%;
+}
+
+div.rcolumnm
+{
+      float:right;
+      width:50%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+}
+
+div.rcolumns
+{
+      right: 0;
+      float:right;
+      width:35%;
+      background-color: #ADD6FF;
+      padding-bottom: 15px;
+      border-left: solid #CCFFCC 2px;
+      margin-left:-2px;
+}
+
+#email, #message
+{
+      text-align:right;
+}
+
+#from, #subject, #name
+{
+      height: 28px;
+      font-size: 16pt;
+      margin-left: 14px;
+      margin-right: 22px;
+      margin-top:8px;
+      text-align: left;
+      padding-left: 5px;
+}
+
+#name
+{
+      width:314px;
+}
+
+#content, #comment
+{
+      font-size: 16pt;
+      width: 387px;
+      margin-right: 28px;
+      margin-top:8px;
+      height: 300px;
+      border:none;
+      resize:vertical;
+      padding-left: 5px;
+      font-family:subFont;
+      border-radius: 3px 3px 0px 0px;
+      margin-bottom:-40px;
+}
+
+#comment
+{
+      height:50px;
+      resize: none;
+}
+
+#sendemail, #sendmessage
+{
+      border:none;
+      background: #ADD6FF;
+      font-size: 12pt;
+      font-family: subFont;
+      width: 394px;
+      margin-left:5px;
+      border-radius: 0px 0px 3px 3px;
+      margin-bottom: 5px;
+}
+
+#sendmessage
+{
+      background: #ADD6FF;
+}
+
+input[type="text"]
+{
+      font-size: 32pt;
+      font-family: subFont;
+      letter-spacing: 3px;
+      width: 300px;
+      text-align: center;
+      border: none;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      margin-top: 30px;
+}
+
+input[type="submit"]
+{
+      font-size: 15pt;
+      font-family: subFont;
+      width: 100px;
+      text-align: center;
+      border:none;
+      background-color: white;
+      border-radius: 3px;
+      margin-bottom: 40px;
+}
+
+.link
+{
+      display:block;
+      font-weight: 900;
+      font-style:italic;
+      margin-top:10px;
+}
+
+.link:hover
+{
+      color:white;
+      cursor: hand;
+      cursor: pointer;
+}
+
+.error
+{
+      margin-top:5px;
+      font-size: 12pt;
+      text-align: center;
+      display:none;
+}
+
+.showbutton
+{
+      border:none;
+      background: #ADD6FF;
+      font-size: 12pt;
+      font-family: subFont;
+      width: 200px;
+      border-radius: 3px;
+      margin-bottom: 15px;
+      margin-top:15px;
+}
+
+.commentbox
+{
+      width:400px;
+      margin:auto;
+      border-collapse:collapse;
+      background: white;
+      display:none;
+}
+
+.postname
+{
+      font-size:10pt;
+      width:130px;
+      vertical-align:middle;
+}
+
+.postcomment
+{
+      font-size:10pt;
+      text-align: left;
+      border:double;
+      padding:6px;
+      width:270px;
+}
+
+.postdate
+{
+      position:absolute;
+      margin-top:-14px;
+      font-size: 6pt;
+      float:left;
+      opacity:.6;
+}
+
+tr
+{
+      border:double;
+      border-collapse:collapse;
+}
